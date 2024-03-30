@@ -1,0 +1,64 @@
+.links {
+    /* 设置容器为弹性布局 */
+    display: flex;
+    
+    /* 设置项目在交叉轴上的对齐方式为居中对齐 */
+    align-items: center;
+    
+    /* 设置项目之间的间隔为 10px */
+    gap: 10px;
+}
+
+.logout{
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* 电脑端：不显示这个展开菜单和这个手机的链接 */
+.menuButton,
+.mobileLinks {
+    display: none;
+}
+
+/* 手机端 不显示电脑端菜单， 显示展开菜单按钮和手机的链接样式 */
+@media (max-width: 768px){
+    .links{
+        display: none;
+    }
+
+        /* 定义菜单按钮样式 */
+    .menuButton {
+        /* 将菜单按钮显示为块级元素 */
+        display: block;
+        /* 设置鼠标样式为手型，表示可点击 */
+        cursor: pointer;
+    }
+
+    /* 定义移动设备上菜单链接的样式 */
+    .mobileLinks {
+        /* 绝对定位，相对于最近定位的祖先元素 */
+        position: absolute;
+        /* 距离顶部 100px */
+        top: 100px;
+        /* 距离右侧边界为 0 */
+        right: 0;
+        /* 宽度为父容器的50% */
+        width: 50%;
+        /* 高度为视窗高度减去顶部 100px */
+        height: calc(100vh - 100px);
+        /* 背景色为蓝色 */
+        background-color: var(--bg);
+        /* 设置为弹性布局，垂直方向排列 */
+        display: flex;
+        /* 主轴方向为垂直 */
+        flex-direction: column;
+        /* 交叉轴上居中对齐 */
+        align-items: center;
+        /* 主轴方向上均匀分布项目 */
+        justify-content: center;
+        /* 项目之间的间隔为 10px */
+        gap: 10px;
+    }
+}

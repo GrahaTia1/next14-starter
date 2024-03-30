@@ -1,0 +1,81 @@
+/* 定义主容器样式 */
+.container {
+    /* 使用弹性布局 */
+    display: flex;
+    /* 垂直居中对齐 */
+    align-items: center;
+    /* 设置子元素间的间距为100px */
+    gap: 100px;
+}
+
+/* 定义图像容器样式 */
+.imgContainer {
+    /* 子元素占据剩余空间 */
+    flex: 1;
+    /* 设置高度为500px */
+    height: 500px;
+    /* 设置相对定位 */
+    position: relative;
+}
+
+/* 定义图像样式 */
+.img {
+    /* 图像尺寸自适应容器 */
+    object-fit: contain;
+}
+
+/* 定义表单容器样式 */
+.formContainer {
+    /* 子元素占据剩余空间 */
+    flex: 1;
+}
+
+/* 定义表单样式 */
+.form {
+    /* 使用弹性布局，垂直方向排列 */
+    display: flex;
+    flex-direction: column;
+    /* 设置子元素间的垂直间距为20px */
+    gap: 20px;
+}
+
+/* 定义输入框和文本域样式 */
+.form input,
+.form textarea {
+    /* 设置内边距为20px */
+    padding: 20px;
+    /* 设置圆角为5px */
+    border-radius: 5px;
+    /* 去除边框 */
+    border: none;
+    /* 去除外边框 */
+    outline: none;
+    /* 设置背景颜色为柔和背景色 */
+    background-color: var(--bgSoft);
+    /* 设置文字颜色为文本颜色 */
+    color: var(--text);
+}
+
+/* 定义按钮样式 */
+.form button {
+    /* 设置内边距为20px */
+    padding: 20px;
+    /* 设置背景颜色为按钮颜色 */
+    background-color: var(--btn);
+    /* 设置文字颜色为文本颜色 */
+    color: var(--text);
+    /* 设置字体粗细为粗体 */
+    font-weight: bold;
+    /* 去除边框 */
+    border: none;
+    /* 设置圆角为5px */
+    border-radius: 5px;
+    /* 设置光标为指针 */
+    cursor: pointer;
+}
+
+@media (max-width:768px){
+    .container{
+        flex-direction: column;
+    }
+}

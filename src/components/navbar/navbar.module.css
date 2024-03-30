@@ -1,0 +1,21 @@
+.container {
+    /* 设置容器高度 */
+    height: 100px;
+    
+    /* 设置容器为弹性布局 */
+    display: flex;
+    
+    /* 设置项目在交叉轴上的对齐方式为居中对齐 */
+    align-items: center;
+    
+    /* 设置主轴方向上的对齐方式为两端对齐 */
+    justify-content: space-between;
+}
+
+.logo {
+    /* 设置字体大小 */
+    font-size: 30px;
+    
+    /* 设置字体粗细 */
+    font-weight: bold;
+}

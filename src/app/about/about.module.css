@@ -1,0 +1,89 @@
+/* 定义主容器样式 */
+.container {
+    /* 使用弹性布局 */
+    display: flex;
+    /* 设置子元素间的间距为100px */
+    gap: 100px;
+}
+
+/* 定义文本容器样式 */
+.textContainer {
+    /* 子元素占据剩余空间 */
+    flex: 1;
+    /* 使用弹性布局，垂直方向排列 */
+    display: flex;
+    flex-direction: column;
+    /* 设置子元素间的垂直间距为50px */
+    gap: 50px;
+}
+
+/* 定义副标题样式 */
+.subtitle {
+    /* 设置文字颜色为按钮颜色 */
+    color: var(--btn);
+}
+
+/* 定义标题样式 */
+.title {
+    /* 设置字体大小为54px */
+    font-size: 54px;
+}
+
+/* 定义描述样式 */
+.desc {
+    /* 设置字体大小为20px */
+    font-size: 20px;
+    /* 设置字体粗细为300 */
+    font-weight: 300;
+}
+
+/* 定义盒子容器样式 */
+.boxes {
+    /* 使用弹性布局 */
+    display: flex;
+    /* 垂直居中对齐 */
+    align-items: center;
+    /* 主轴方向两端对齐 */
+    justify-content: space-between;
+}
+
+/* 定义盒子样式 */
+.box {
+    /* 使用弹性布局，垂直方向排列 */
+    display: flex;
+    flex-direction: column;
+    /* 设置子元素间的垂直间距为10px */
+    gap: 10px;
+}
+
+/* 定义盒子标题样式 */
+.box h1 {
+    /* 设置标题文字颜色为按钮颜色 */
+    color: var(--btn);
+}
+
+/* 定义图像容器样式 */
+.imgContainer {
+    /* 子元素占据剩余空间 */
+    flex: 1;
+    /* 设置相对定位 */
+    position: relative;
+}
+
+/* 定义图像样式 */
+.img {
+    /* 图像尺寸自适应容器 */
+    object-fit: contain;
+}
+
+@media (max-width:768px){
+    .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .boxes{
+        flex-direction: column;
+        gap: 50px;
+    }
+}

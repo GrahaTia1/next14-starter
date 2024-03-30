@@ -1,0 +1,104 @@
+/* 根元素样式定义 */
+:root {
+    /* 主背景色 */
+    --bg: #0d0c22;
+    /* 次要背景色 */
+    --bgSoft: #2d2b42;
+    /* 文字颜色 */
+    --text: white;
+    /* 次要文字颜色 */
+    --textSoft: #e5e5e5;
+    /* 按钮颜色 */
+    --btn: #3673fd;
+}
+
+/* 全局样式重置 */
+* {
+    margin: 0; /* 设置外边距为0 */
+    padding: 0; /* 设置内边距为0 */
+    box-sizing: border-box; /* 设置盒模型为border-box */
+}
+
+/* 页面主体样式 */
+body {
+    /* 使用变量定义的主背景色 */
+    background-color: var(--bg);
+    /* 使用变量定义的文字颜色 */
+    color: var(--text);
+}
+
+/* 链接样式 */
+a {
+    /* 取消下划线 */
+    text-decoration: none;
+    /* 继承颜色 */
+    color: inherit;
+}
+
+.container {
+    /* 设置背景颜色 */
+    /* background-color: rebeccapurple; */
+    
+    /* 设置容器宽度 */
+    width: 90%;
+    
+    /* 设置左右内边距 */
+    padding-left: 10%;
+    padding-right: 0px;
+    
+    /* 设置垂直方向上的最小高度 */
+    min-height: 100vh;
+    
+    /* 设置容器为弹性布局 */
+    display: flex;
+    
+    /* 设置主轴方向为垂直 */
+    flex-direction: column;
+    
+    /* 设置主轴方向上的对齐方式为两端对齐 */
+    justify-content: space-between;
+}
+
+@media (max-width: 1536px){
+    .container{
+        width: 1366px;
+    }
+}
+
+@media (max-width: 1366px){
+    .container{
+        width: 1280px;
+    }
+}
+
+@media (max-width: 1280px){
+    .container{
+        width: 1024px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1024px){
+    .container{
+        width: 768px;
+    }
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 640px;
+    }
+}
+
+@media (max-width: 640px){
+    .container{
+        width: 475px;
+    }
+}
+
+@media (max-width: 475px){
+    .container{
+        width: 380px;
+    }
+}

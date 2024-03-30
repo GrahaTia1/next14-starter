@@ -1,0 +1,21 @@
+.container {
+    /* 设置元素的最小宽度为100像素 */
+    min-width: 100px;
+    /* 设置元素的内边距为10像素 */
+    padding: 10px;
+    /* 设置元素的边框圆角为20像素，呈现圆角效果 */
+    border-radius: 20px;
+    /* 设置元素的字体粗细为500，中等粗细 */
+    font-weight: 500;
+    /* 设置元素内文本的水平居中对齐 */
+    text-align: center;
+    /* 设置元素的边框样式为白色实线，宽度为2像素 */
+    border: 2px solid white;
+}
+
+.active {
+    /* 设置元素的背景颜色为 --text 变量定义的颜色值 */
+    background-color: var(--text);
+    /* 设置元素的文字颜色为 --bg 变量定义的颜色值 */
+    color: var(--bg);
+}
